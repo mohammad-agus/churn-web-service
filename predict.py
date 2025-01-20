@@ -6,7 +6,7 @@ input_file = 'model_C=1.0.bin'
 with open(input_file, 'rb') as f:
     dv, model = pickle.load(f)
 
-app = Flask('churn')
+app = Flask('churn-web-service')
 
 @app.route('/predict', methods=['POST'])
 def predict():
